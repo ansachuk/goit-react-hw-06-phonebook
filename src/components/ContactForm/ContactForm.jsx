@@ -38,6 +38,8 @@ export default function ContactForm() {
 	const onFormSubmit = e => {
 		e.preventDefault();
 
+		console.log("contacts", contacts);
+
 		const hasSameContactName = contacts.some(contact => contact.name === name);
 
 		if (hasSameContactName) {
